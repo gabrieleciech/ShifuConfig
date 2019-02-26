@@ -1,6 +1,0 @@
-spring:
-  rabbitmq:
-      host: woodpecker.rmq.cloudamqp.com
-      virtual-host: szcepcam
-      username: szcepcam
-      password: hKJT24VpqSnLr0jAN6rHyZaFSrQkoIr0
