@@ -1,3 +1,15 @@
 spring:
   rabbitmq:
     host: rabbitmq
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: simple-service
+          uri: lb://simple-service
+          predicates:
+            - Path=/simple/**
+          filters:
+            - RewritePath=/simple/(?<path>.*), /$\{path}
