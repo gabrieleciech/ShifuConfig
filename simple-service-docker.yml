@@ -1,3 +1,5 @@
 spring:
   rabbitmq:
     host: rabbitmq
+app:
+  response: Ciao
