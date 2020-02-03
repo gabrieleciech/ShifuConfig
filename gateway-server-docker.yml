@@ -18,4 +18,4 @@ spring:
           predicates:
             - Path=/eureka/**
           filters:
-            - RewritePath=/(?<path>.*), /$\{path}
+            - RewritePath=/eureka/(?<path>.*), /$\{path}
