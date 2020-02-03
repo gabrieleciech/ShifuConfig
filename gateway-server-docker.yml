@@ -14,7 +14,7 @@ spring:
           filters:
             - RewritePath=/simple/(?<path>.*), /$\{path}
         - id: eureka-server
-          uri: http://discovery-server
+          uri: http://discovery-server:8761
           predicates:
             - Path=/eureka/**
           filters:
